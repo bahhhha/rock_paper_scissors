@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    background-color: #242424;
+    opacity: 1;
+    background-image: radial-gradient(rgb(36, 36, 36) 1.35px, #0e0e0e 1.35px);
+    background-size: 27px 27px;
+    font-family: 'Press Start 2P';
+}
+.header {
+    width: 100%;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2.5em;
+    color: rgb(255, 201, 22);
+    text-shadow: 4px 4px 0px rgb(99, 76, 0);
+
+}
+.choices_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1em;
+    gap: 5.5em;
+    font-size: 2em;
+}
+.choice_text {
+    width: 8em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.6);
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10em;
+    gap: 5em;
+    justify-content: center;
+}
+
+.choice {
+    justify-content: center;
+    border-radius: 2em;
+    border: none;
+    padding: 5em;
+    background-color: rgba(22, 22, 22, 0.9);
+    box-shadow: 5px 5px 0px rgba(255, 0, 119, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.8);
+   
+}
+.choice:hover {
+    background-color: rgba(68, 68, 68, 0.5);
+    box-shadow: 5px 5px 0px rgba(20, 255, 165, 0.57), 5px 5px 5px rgb(0, 0, 0);
+    animation: 1s;
+    transition: 0.2s;
+}
+
+#image {
+    height: 15em;
+}
+
+.textbelow {
+    padding-top: 8em;
+    display: flex;
+    justify-content: center;
+}
+.versus {
+    display: flex;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.6);
+    justify-content: center;
+    font-size: 1.5em;
+    width: 55em;
+}
+
+.player {
+    justify-content: center;
+    width: 20em;
+    flex: 1;
+}
+
+#playerchoice, #computerchoice {
+    color: rgb(255, 201, 22);
+    text-shadow: 4px 4px 0px rgb(99, 76, 0);
+}
+
+#verdict {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 3em;
+    color: rgb(255, 201, 22);
+    text-shadow: 4px 4px 0px rgb(99, 76, 0);
+}
