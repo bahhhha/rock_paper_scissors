@@ -10,9 +10,9 @@
     <body>
         <div class="header">Let's play a game!</div>
         <div class="choices">
-            <button id="rock" class="choice" onclick="startgame(this.id)"><img src="rock.png" id="image"></button>
-            <button id="paper" class="choice" onclick="startgame(this.id)"><img src="paper.png" id="image"></button>
-            <button id="scissors" class="choice" onclick="startgame(this.id)"><img src="scissors.png" id="image"></button></button>
+            <button id="rock" class="choice" onclick="game(this.id)"><img src="rock.png" id="image"></button>
+            <button id="paper" class="choice" onclick="game(this.id)"><img src="paper.png" id="image"></button>
+            <button id="scissors" class="choice" onclick="game(this.id)"><img src="scissors.png" id="image"></button></button>
         </div>
         <div class="choices_text">
             <div class="choice_text" id="rock_text">Rock</div>
@@ -25,8 +25,16 @@
             <div class="player">Your choice: <span id="playerchoice"></span></div>
             <div class="player">Computer's choice: <span id="computerchoice"></span></div>
         </div>
-       
+    </div>
+    <div class="textbelow">
+        
+        <div class="versus">
+            <div class="player">Score: <span id="playerscore"></span></div>
+            <div class="player">Score: <span id="computerscore"></span></div>
         </div>
+        </div>
+    </div>
         <div id="verdict"></div>
+        <div id="verdict2"></div>
     </body>
 </html>

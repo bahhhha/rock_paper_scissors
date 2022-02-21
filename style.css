@@ -33,7 +33,7 @@ body {
 .choices {
     display: flex;
     flex-direction: row;
-    padding-top: 10em;
+    padding-top: 7em;
     gap: 5em;
     justify-content: center;
 }
@@ -49,7 +49,7 @@ body {
 }
 .choice:hover {
     background-color: rgba(68, 68, 68, 0.5);
-    box-shadow: 5px 5px 0px rgba(20, 255, 165, 0.57), 5px 5px 5px rgb(0, 0, 0);
+    box-shadow: 5px 5px 0px rgba(22, 255, 255, 0.8), 5px 5px 5px rgb(0, 0, 0);
     animation: 1s;
     transition: 0.2s;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .textbelow {
-    padding-top: 8em;
+    padding-top: 3em;
     display: flex;
     justify-content: center;
 }
@@ -78,15 +78,38 @@ body {
     flex: 1;
 }
 
-#playerchoice, #computerchoice {
+#computerchoice, #computerscore {
+    color: rgb(255, 22, 119);
+    text-shadow: 4px 4px 0px rgb(66, 0, 50);
+}
+
+#playerchoice, #playerscore {
+    color: rgb(22, 255, 255);
+    text-shadow: 4px 4px 0px rgb(0, 71, 99);
+}
+
+#verdict, #verdict2 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1em;
     color: rgb(255, 201, 22);
     text-shadow: 4px 4px 0px rgb(99, 76, 0);
 }
 
-#verdict {
-    text-align: center;
-    font-size: 2em;
-    padding-top: 3em;
-    color: rgb(255, 201, 22);
-    text-shadow: 4px 4px 0px rgb(99, 76, 0);
+#verdict2 {
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+  animation-name: rainbow;
+
+}
+@keyframes rainbow {
+from {
+    color: rgb(22, 255, 255);
+    text-shadow: 4px 4px 0px rgb(0, 71, 99);
+  }
+
+  to {
+    color: rgb(255, 22, 119);
+    text-shadow: 4px 4px 0px rgb(66, 0, 50);
+  }
 }
